@@ -1,0 +1,29 @@
+{
+  "name": "avg/modular",
+  "description": "Modular extension for Laravel that adds module generation and structure support.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Avg\\Modular\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Avg\\Modular\\Providers\\ModularProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php artisan vendor:publish --provider=\"Avg\\Modular\\Providers\\ModularProvider\" --force"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
