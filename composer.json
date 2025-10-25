@@ -17,13 +17,13 @@
   },
   "require": {
     "php": "^8.0",
-    "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+    "illuminate/support": "^10.0 || ^11.0"
   },
   "scripts": {
     "post-install-cmd": [
       "@php artisan vendor:publish --provider=\"Avg\\Modular\\Providers\\ModularProvider\" --force"
     ]
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
